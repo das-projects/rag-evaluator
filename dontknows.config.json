@@ -1,0 +1,11 @@
+{
+    "testdata_path": "example_input/qa_dontknows.jsonl",
+    "results_dir": "blog_results_dontknows/gpt35_prompt2",
+    "requested_metrics": ["dontknowness", "answer_length", "latency", "has_citation"],
+    "target_url": "http://host.docker.internal:50505/chat",
+    "target_parameters": {
+        "overrides": {
+            "prompt_template": "<READFILE>example_input/prompt_refined.txt"
+        }
+    }
+}
