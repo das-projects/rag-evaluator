@@ -52,7 +52,7 @@ def generate(
     output: Path = typer.Option(exists=False, dir_okay=False, file_okay=True),
     numquestions: int = typer.Option(help="Number of questions to generate", default=200),
     persource: int = typer.Option(help="Number of questions to generate per source", default=5),
-    citationfieldname: str = typer.Option(help="Name of citiation field in ai search index", default="sourcepage"),
+    citationfieldname: str = typer.Option(help="Name of citiation field in ai search index", default="source"),
 ):
     generate_test_qa_data(
         openai_config=service_setup.get_openai_config_dict(),

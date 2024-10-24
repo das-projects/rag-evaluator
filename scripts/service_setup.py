@@ -62,9 +62,9 @@ def get_openai_config_dict() -> dict:
             api_key = azure_credential.get_token("https://cognitiveservices.azure.com/.default").token
         openai_config = {
             "api_type": "azure",
-            "api_base": os.environ["AZURE_OPENAI_ENDPOINT"],
+            "api_base": os.environ['AZURE_OPENAI_ENDPOINT'],
             "api_key": api_key,
-            "api_version": "2024-02-15-preview",
+            "api_version": "2024-08-01-preview",
             "deployment": os.environ["AZURE_OPENAI_EVAL_DEPLOYMENT"],
             "model": os.environ["OPENAI_GPT_MODEL"],
         }
